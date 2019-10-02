@@ -1,0 +1,11 @@
+struct IntStack<T> {
+    init(_ elements: T...) {
+        self.items = elements
+    }
+    mutating func push(_ item: T) {
+        items.append(item)
+    }
+    mutating func pop() -> T {
+        return items.removeLast()
+    }
+}
